@@ -1,0 +1,45 @@
+﻿@model Order
+
+<div class="text-danger" asp-validation-summary="All"></div>
+
+<form method="post" asp-action="Checkout">
+    <div class="form-group my-3">
+        <label>İsim</label>
+        <input class="form-control" asp-for="Name">
+    </div>
+
+    <div class="form-group my-3">
+        <label >İlçe</label>
+        <input class="form-control" asp-for="Line1">
+    </div>
+    <div class="form-group my-3">
+        <label>Mahalle</label>
+        <input class="form-control" asp-for="Line1">
+    </div>
+
+    <div class="form-group my-3">
+        <label>Sokak</label>
+        <input class="form-control" asp-for="Line2">
+    </div>
+
+    <div class="form-group my-3">
+        <label>Bina/Daire No</label>
+        <input class="form-control" asp-for="Line3">
+    </div>
+
+    <div class="form-group my-3">
+        <label >İl</label>
+        <input class="form-control" asp-for="City">
+    </div>
+
+    <div class="form-group my-3">
+        <input asp-for="GiftWrap">
+        <label>Hediye Paketi İstiyorum.</label>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">
+            Siparişi Onayla
+        </button>
+    </div>
+</form>
